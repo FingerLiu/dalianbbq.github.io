@@ -1,12 +1,12 @@
 ---
-title: Contact
-heading: Get in touch today
-description: We'd love to help you improve your sales.
+title: 酒肉大观美式BBQ - 世界领先的智能温控碳烤炉
+heading: 联系我们
+description:从酒肉大观开始美式BBQ.
 
 map:
   latitude: 38.9251778675
   longitude: 121.6452729799
-  address: "辽宁省大连市, 中山区, 修竹街90号5单元2层1号"
+  address: "辽宁省大连市, 中山区, 修竹街90号5单元201号"
   zoom: 13
 ---
 <div class="map" id="map"></div>
@@ -17,27 +17,29 @@ map:
 		<input type="hidden" name="_to" value="info@dalianbbq.com" />
 		<input type="text" name="_gotcha" style="display: none;">
 
-		<label for="name">Full Name</label>
+		<label for="name">名字</label>
 		<input type="text" name="name" id="name" placeholder="Enter your name..." />
 
-		<label for="email">Email Address</label>
+		<label for="email">电子邮箱</label>
 		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
 
-		<label for="message">Message</label>
+		<label for="message">消息内容</label>
 		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
 		<input type="submit" value="Send Message" />
 	</form>
 
 	<div class="contact-details">
-		<h3 class="editable">Address</h3>
-		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
+	<!--
 
-		<h3 class="editable">Email</h3>
+		<h3 class="editable">地址</h3>
+		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
+	-->
+		<h3 class="editable">联系邮箱</h3>
 		<p><a href="mailto:info@dalianbbq.com">info@dalianbbq.com</a></p>
 	</div>
 </div>
-
+<!--
 <script type="text/javascript">
 	window.mapData = {{ page.map | jsonify }};
 
@@ -176,3 +178,4 @@ map:
 	}
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
+-->
