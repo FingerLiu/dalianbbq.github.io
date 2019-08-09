@@ -3,18 +3,18 @@
   new_window: false
   highlight: false
 
-# - name: 产品
-#   link: /pricing/
-#   new_window: false
-#   highlight: false
-# - name: 烧烤101
-#   link: /blog/
-#   new_window: false
-#   highlight: false
-# - name: 关于
-#   link: /about/
-#   new_window: false
-#   highlight: false
+- name: 产品
+  link: /pricing/
+  new_window: false
+  highlight: false
+- name: 烧烤101
+  link: /blog/
+  new_window: false
+  highlight: false
+- name: 关于
+  link: /about/
+  new_window: false
+  highlight: false
 - name: 联系我们
   link: /contact/
   new_window: false
