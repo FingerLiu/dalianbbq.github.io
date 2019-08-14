@@ -4,7 +4,6 @@ heading: 找到最适合你的烤肉设备
 description: All plans include our award winning sales optimization solution to track your sales in real time.
 pricing_table:
   - name: Basic
-    color: "#8e8e8e"
     features:
       - text: $25 per month
         highlight: true
@@ -22,7 +21,6 @@ pricing_table:
       link: http://mysite.com?plan=basic
       text: Get started
   - name: Pro
-    color: "#4a4a4a"
     features:
       - text: $99 per month
         highlight: true
@@ -40,7 +38,6 @@ pricing_table:
       link: http://mysite.com?plan=pro
       text: Get started
   - name: Professional
-    color: "#000000"
     features:
       - text: $299 per month
         highlight: true
@@ -70,7 +67,7 @@ faq:
 <div class="plans">
 	{% for plan in page.pricing_table %}
 		<ul class="plan">
-			<li style="background: {{ plan.color }}">
+			<li">
 				<h3>{{ plan.name }}</h3>
 			</li>
 			{% for feature in plan.features %}
@@ -78,7 +75,7 @@ faq:
 			{% endfor %}
 
 			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+				<li class="pricing-cta"><div class="button"><a href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
 			{% endif %}
 		</ul>
 	{% endfor %}
