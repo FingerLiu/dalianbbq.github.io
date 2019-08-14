@@ -6,7 +6,6 @@ pricing_table:
   - name: 15寸陶瓷炉
     features:
       - image: /images/BBQube_final1200x800.jpg
-      -<img src="/images/BBQube_final1200x800.jpg" alt="">
     call_to_action:
       link: https://www.dalianbbq.com/pricing/
       text: 查看价格
@@ -41,7 +40,7 @@ faq:
 				<h3>{{ plan.name }}</h3>
 			</li>
 			{% for feature in plan.features %}
-				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}<img src="{{feature.img}}" alt=""></li>
+				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}<img src="{{feature.image}}" alt="" /></li>
 			{% endfor %}
 
 			{% if plan.call_to_action %}
