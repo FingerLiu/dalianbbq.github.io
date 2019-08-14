@@ -54,7 +54,11 @@ header {
 }
 
 .content {
-	background: #fff;
+	background-image: url(/images/blackboard-1200.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	//background: #fff;
 	padding: 1px 0 0 0;
 	position: relative;
 }
