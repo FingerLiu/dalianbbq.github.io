@@ -1,32 +1,24 @@
 ---
-date: 2016-08-12
-title: The history of marketing
+date: 2019-08-12
+title: 温度和时间的艺术
 categories:
-  - marketing
-author_staff_member: robin
+  - 历史
+author_staff_member: Mao
 ---
-The beginnings of digital marketing technology can be traced back to the 1980's, when computers became sophisticated enough to store huge volumes of customer information. For a brief moment, no one knew what would happen in digital marketing, but by the 90's it all became clear.
+美式熏烤炉叫Kamado，Kamado是二战后美军从日本带回的一种炊具，日语中kamado是“竈”的读音。而“竈”即为“灶”。没错，就是曾经乡村的厨房里的灶台子。
+千年前，古人们用陶土做成可移动的烹饪食物的灶台。通过燃烧木料或木炭来加热炊具。这种烹饪器皿传入其他地方后得到了不同方式的进化。在日本，它演变成了一种带有可拆卸顶盖的陶罐。顶盖和下部的开口形成了一种阻尼器控制流入炉内的空气。
+当美军把这种烤炉带回美国后，和美国本土的熏烤技术产生了神奇的化学反应。
 
-![Man](https://source.unsplash.com/random/1500x1146)
+![kamado origin](/images/Kamado4816.jpg)
 
-The history of marketing is to a large extent a product of Internet's history as markets have adapted to keep abreast of changes and keep up with the way the major Search Engines rank web pages. Major changes include, in chronological order:
+## 人人都能成为大师
 
-1991- Gopher: A network protocol, one of the very first query and search tools. Gopher was widely used for a couple of years, but usage has now fallen off, with barely 100 Gopher servers now indexed. 2. 1994- Launch of Yahoo, which was formerly known as "Jerry´s Guide to the World Wide Web" after one of its founders, Jerry Yang. Yahoo received in its first year over 1 million hits.
+从一块鲜嫩多汁的完美牛排到Q弹如果冻一般的牛胸肉，Kamado的无锁不能让所有人感到惊讶。烹饪的核心在于时间和温度。和快餐不同，低温慢烤像任何一种艺术一般，需要时间去把味道和口感加在食物上。其结果也像艺术品一样，当你咬下第一口肉的时候，那种软嫩的口感和肉汁充满了整个口腔带来的满足感让人无法忘记。而是否能成功的烤出美味的关键就是温度。在智能温控设备出现以前，控温曾经是个神秘的技能，只有一位经验丰富的烧烤大师才能准确的控制炉内的温度。我们的目标就是让这一切便的和泡方便面一样简单。智能温控系统能让你轻松控制烹饪温度和时间，让你每时每刻都能为你的家人和朋友烹饪一顿美味大餐。
 
-## Academic studies
+![Steak](/images/steak.jpg)
 
-The study of the history of marketing as an academic field emerged only recently. Controversies and disputes abound in the field. The publication in 1976 of the book The History of Marketing Thought, by Robert Bartels marks a turning-point in marketing thought. Since then, academics specializing in marketing decided to imitate economics, distinguishing theory and practice. Two different fields of study emerged:
+很多人认为美国的烹饪比中国的要粗糙简陋许多，其实不然。美式烤肉可以按地域区分出很多风格。而对腌肉调料的讲究劲甚至比我们还要多。辣椒粉，蒜粉，姜粉，洋葱粉，肉桂粉，胡椒粉，红糖，迷迭香，黄芥末等等会被以不同的比例混和成各式的腌料(Dry Rub)。当你在美国南方各地品尝不同的烤肉时，当地的老爷爷都会很神秘的告诉你他特有的配方。
 
-the history of marketing thought, giving theoretical accounts
-marketing history, focusing on the history of marketing practice
-This division parallels the distinction between the history of economic thought and economic history.
+![Spice](/images/salt.jpg)
 
-![Thai](https://source.unsplash.com/random/1500x1147)
-
-Practitioners of the history of marketing thought note that both practitioners and academics know relatively little about the field.[citation needed] But history has significance for academics because it helps to define the baselines upon which they can recognize change and evolve marketing theory.On the other hand, proponents of marketing history argue that one cannot fully compare the marketing field with economics and hence suggest the impracticality of divorcing theory and practice. First, marketing scholars seldom engage in the practice of marketing as much as economists engage in the development and execution of public policies. Second, business people innovate in the marketing field, and the history of marketing will remain incomplete if one dissociates academia from practitioners.
-
-![lavender flowers](https://source.unsplash.com/random/1500x1148)
-
-The following sections discuss both approaches to the history of marketing, closing with a debate about the standard chronology of marketing, a widely known hypothesis about the history of marketing, but one that historians in the marketing field have challenged.
-
-[source](https://en.wikipedia.org/wiki/History_of_marketing): Wikipedia
+图片来源: Public Domain, https://commons.wikimedia.org/w/index.php?curid=118411
