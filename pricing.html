@@ -42,7 +42,7 @@ faq:
 			{% endfor %}
 
 			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button alt" id="myBtn"><!--<a href="{{ plan.call_to_action.link }}">-->{{ plan.call_to_action.text }} &rarr;</a></div></li>
+				<li class="pricing-cta"><div class="button alt" id="myBtn"><!--<a href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a>--><p>{{ plan.call_to_action.text }}</p></div></li>
 			{% endif %}
 		</ul>
 	{% endfor %}
