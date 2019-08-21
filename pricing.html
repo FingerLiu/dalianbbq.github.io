@@ -9,6 +9,7 @@ pricing_table:
     call_to_action:
         id: 001
         text: 查看价格
+        price: 1900
         qr: /images/kmd15-qr-code.png
   - name: 22寸陶瓷炉
     features:
@@ -16,6 +17,7 @@ pricing_table:
     call_to_action:
         id: 002
         text: 查看价格
+        price: 2400
         qr: /images/kmd22-qr-code.png
   - name: 24寸陶瓷炉
     features:
@@ -23,6 +25,7 @@ pricing_table:
     call_to_action:
         id: 003
         text: 查看价格
+        price: 2900
         qr: /images/kmd24-qr-code.png
 faq:
   - question: 我怎么购买?
@@ -52,8 +55,8 @@ faq:
           <div class="modal-content">
           <span class="close">&times;</span>
               <p class="pricing-p">扫码购买</p>
-              <p class="pricing-p"></p>
-              <img scr="{{plan.call_to_action.qr}}" alt="" />
+              <p class="pricing-p">{{pan.call_to_action.price}}</p>
+              <div><img scr="{{plan.call_to_action.qr}}" alt="" /></div>
             </div>
           </div>
             <script>
