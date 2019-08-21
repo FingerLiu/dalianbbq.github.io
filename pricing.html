@@ -7,26 +7,29 @@ pricing_table:
     features:
       - image: /images/jskamado-15.jpg
     call_to_action:
-      - link: https://www.dalianbbq.com/pricing/
-        price: ￥1900
+        link: https://www.dalianbbq.com/pricing/
         text: 查看价格
+    call_to_info:
+      - price: ￥1900
         img: /images/kmd15-qr-code.png
   - name: 22寸陶瓷炉
     features:
     - image: /images/jskamado-22.jpg
     call_to_action:
-      - link: https://www.dalianbbq.com/pricing/
-        price: ￥2400
+        link: https://www.dalianbbq.com/pricing/
         text: 查看价格
-        img: /images/kmd22-qr-code.png
+    call_to_info:
+      - price: ￥1900
+        img: /images/kmd15-qr-code.png
   - name: 24寸陶瓷炉
     features:
     - image: /images/jskamado-24.jpg
     call_to_action:
       - link: https://www.dalianbbq.com/pricing/
-        price: ￥2900
         text: 查看价格
-        img: /images/kmd24-qr-code.png
+    call_to_info:
+      - price: ￥1900
+        img: /images/kmd15-qr-code.png
 faq:
   - question: 我怎么购买?
     answer: 点击查看价格后扫去弹出的二维码即可跳转到商城购买.
@@ -52,12 +55,14 @@ faq:
           <!-- The Modal -->
           <div id="myModal" class="modal">
             <!-- Modal content -->
+            {% for info in plan.call_to_info }
             <div class="modal-content">
               <span class="close">&times;</span>
               <p class="pricing-p">扫码购买</p>
-              <p class="pricing-p">{{ plan.call_to_action.price }}</p>
-              <img src="{{ plan.call_to_action.img }}" alt="QR code" >
+              <p class="pricing-p">{{ plan.call_to_info.price }}</p>
+              <img src="{{ plan.call_to_info.img }}" alt="QR code" >
             </div>
+            {% endfor %}
           </div>
             <script>
                 // Get the modal
