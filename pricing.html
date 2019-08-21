@@ -7,19 +7,19 @@ pricing_table:
     features:
       - image: /images/jskamado-15.jpg
     call_to_action:
-        link: https://www.dalianbbq.com/pricing/
+        id: 001
         text: 查看价格
   - name: 22寸陶瓷炉
     features:
     - image: /images/jskamado-22.jpg
     call_to_action:
-        link: https://www.dalianbbq.com/pricing/
+        id: 002
         text: 查看价格
   - name: 24寸陶瓷炉
     features:
     - image: /images/jskamado-24.jpg
     call_to_action:
-        link: https://www.dalianbbq.com/pricing/
+        id: 003
         text: 查看价格
 faq:
   - question: 我怎么购买?
@@ -42,13 +42,13 @@ faq:
 			{% endfor %}
 
 			{% if plan.call_to_action %}
-        <li class="pricing-cta"><div class="button alt"><a id="myBtn">{{ plan.call_to_action.text }}&rarr;</a>
+        <li class="pricing-cta"><div class="button alt"><a id="{{plan.call_to_action.id}}">{{ plan.call_to_action.text }}&rarr;</a>
           <!-- The Modal -->
           <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
+          <!-- Modal content -->
+          <div class="modal-content">
+          <span class="close">&times;</span>
+              <p class="pricing-p">扫码购买</p>
             </div>
           </div>
             <script>
