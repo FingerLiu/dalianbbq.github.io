@@ -8,19 +8,25 @@ pricing_table:
       - image: /images/jskamado-15.jpg
     call_to_action:
       link: https://www.dalianbbq.com/pricing/
+      price: ￥1900
       text: 查看价格
+      img: /images/kmd15-qr-code.png
   - name: 22寸陶瓷炉
     features:
     - image: /images/jskamado-22.jpg
     call_to_action:
       link: https://www.dalianbbq.com/pricing/
+      price: ￥2400
       text: 查看价格
+      img: /images/kmd22-qr-code.png
   - name: 24寸陶瓷炉
     features:
     - image: /images/jskamado-24.jpg
     call_to_action:
       link: https://www.dalianbbq.com/pricing/
+      price: ￥2900
       text: 查看价格
+      img: /images/kmd24-qr-code.png
 faq:
   - question: 我怎么购买?
     answer: 点击查看价格后扫去弹出的二维码即可跳转到商城购买.
@@ -42,14 +48,14 @@ faq:
 			{% endfor %}
 
 			{% if plan.call_to_action %}
-        <li class="pricing-cta"><div class="button alt"><!--<a href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a>--><a id="myBtn">查看价格</a>
+        <li class="pricing-cta"><div class="button alt"><!--<a href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a>--><a id="myBtn">{{ plan.call_to_action.text }}</a>
           <!-- The Modal -->
           <div id="myModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
               <p class="pricing-p">扫码购买</p>
-              <img src="/images/kmd15-qr-code.png" alt="QR code" >
+              <img src="{{plan.call_to_cation.img}}" alt="QR code" >
             </div>
           </div>
             <script>
