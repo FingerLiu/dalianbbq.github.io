@@ -29,6 +29,10 @@
 			}
 		}
 
+		.pricing-p {
+			color: #000;
+		}
+
 		@media #{$desktop} {
 			-webkit-flex: 1;
 			flex: 1;
@@ -107,3 +111,6 @@
 	text-decoration: none;
 	cursor: pointer;
   }
+  img {
+	width:100%;
+	}
