@@ -7,24 +7,18 @@ pricing_table:
     features:
       - image: /images/jskamado-15.jpg
     call_to_action:
-        id: 001
-        text: 查看价格
         price: 1900
         qr: /images/kmd15-qr-code.png
   - name: 22寸陶瓷炉
     features:
     - image: /images/jskamado-22.jpg
     call_to_action:
-        id: 002
-        text: 查看价格
         price: 2400
         qr: /images/kmd22-qr-code.png
   - name: 24寸陶瓷炉
     features:
     - image: /images/jskamado-24.jpg
     call_to_action:
-        id: 003
-        text: 查看价格
         price: 2900
         qr: /images/kmd24-qr-code.png
 faq:
@@ -47,46 +41,9 @@ faq:
 				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}<img src="{{feature.image}}" alt="" /></li>
 			{% endfor %}
 
-			{% if plan.call_to_action %}
-        <li class="pricing-cta"><div class="button alt"><a id="{{plan.call_to_action.id}}">{{ plan.call_to_action.text }}&rarr;</a>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-          <span class="close">&times;</span>
-              <p class="pricing-p">扫码购买</p>
-              <p class="pricing-p">{{pan.call_to_action.price}}</p>
-              <div><img src="{{plan.call_to_action.qr}}" alt="" /></div>
-            </div>
-          </div>
-            <script>
-                // Get the modal
-                var modal = document.getElementById("myModal");
-                
-                // Get the button that opens the modal
-                var btn = document.getElementById("{{plan.call_to_action.id}}");
-                
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-                
-                // When the user clicks the button, open the modal 
-                btn.onclick = function() {
-                  modal.style.display = "block";
-                }
-                
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() {
-                  modal.style.display = "none";
-                }
-                
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                  if (event.target == modal) {
-                    modal.style.display = "none";
-                  }
-                }
-              </script>
-          </div></li>
+      {% if plan.call_to_action %}
+        <li class="pricing-cta"><p>{{plan.call_to_action.price}}</p></li>
+        <li class="pricing-cta"><img src="{{plan.call_to_action.qr}}"></li>
 			{% endif %}
     </ul>
 	{% endfor %}
