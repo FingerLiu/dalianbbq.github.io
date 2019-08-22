@@ -42,8 +42,8 @@ faq:
 			{% endfor %}
 
       {% if plan.call_to_action %}
-        <li class="pricing-cta"><p>￥{{plan.call_to_action.price}} 扫码购买</p></li>
-        <li class="pricing-cta"><img src="{{plan.call_to_action.qr}}"></li>
+        <li class="pricing-cta"><p>￥{{plan.call_to_action.price}} 微信扫码购买</p></li>
+        <li class="pricing-cta"><img src="{{plan.call_to_action.qr}}" width="50%"></li>
 			{% endif %}
     </ul>
 	{% endfor %}
