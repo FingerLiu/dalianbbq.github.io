@@ -48,7 +48,7 @@ faq:
 
       {% if plan.call_to_action %}
         <li class="pricing-cta"><p>￥{{plan.call_to_action.price}}</p></li>
-        <li class="button alt"><a id="{{plan.id}}" onclick="showprice('{{plan.id}}')">微信扫码购买</a>
+        <li class="button alt"><a id="{{plan.id}}" onclick="showprice('{{plan.qr}}')">微信扫码购买</a>
         </li>
       {% endif %}
 <!-- The Modal -->
@@ -65,9 +65,9 @@ faq:
 </div>
 
 <script>
-  function showprice(id){
+  function showprice(qrurl){
     var img = document.getElementById("priceqr");
-    img.src = '/images/' + id + '-qr-code.png';
+    img.src = qrurl;//'/images/' + id + '-qr-code.png';
     // /images/kmd24-qr-code.png
     // Get the modal
     var modal = document.getElementById("priceview");
