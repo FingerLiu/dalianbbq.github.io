@@ -48,7 +48,7 @@ faq:
 
       {% if plan.call_to_action %}
         <li class="pricing-cta"><p>￥{{plan.call_to_action.price}}</p></li>
-        <li class="button alt"><a id="{{plan.id}}" onclick="showprice({{plan.id}})">微信扫码购买</a>
+        <li class="button alt"><a id="{{plan.id}}" onclick="showprice('{{plan.id}}')">微信扫码购买</a>
         </li>
       {% endif %}
 <!-- The Modal -->
@@ -89,6 +89,7 @@ faq:
   }
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
+    var modal = document.getElementById("priceview");
     if (event.target == modal) {
       modal.style.display = "none";
     }
