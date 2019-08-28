@@ -51,21 +51,31 @@ faq:
         <li class="button alt"><a id="{{plan.id}}" onclick="showprice('{{plan.qr}}')">微信扫码购买</a>
         </li>
       {% endif %}
-<!-- The Modal -->
-<div id="priceview" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close" onclick="hide()">&times;</span>
-    <div><img id="priceqr" src="{{plan.qr}}"/></div>
-  </div>
-</div>
     </ul>
 	{% endfor %}
 </div>
 
+<!-- The Modal -->
+<div id="priceview" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="hide()">&times;</span>
+      <div>
+        <img id="priceqr" src="{{plan.qr}}"/>
+        <p class="nononono" id="inwechat"></p>
+      </div>
+    </div>
+  </div>
+
 <script>
   function showprice(qrurl){
+    var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
+    if(isWeixinBrowser){
+      var p = document.getElementById("inwechat");
+      p.value = "请长按二维码自动识别"
+    }
+
     var img = document.getElementById("priceqr");
     img.src = qrurl;//'/images/' + id + '-qr-code.png';
     // /images/kmd24-qr-code.png
