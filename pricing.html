@@ -73,7 +73,7 @@ faq:
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if(isWeixinBrowser){
       var p = document.getElementById("inwechat");
-      p.value = "请长按二维码自动识别"
+      p.innerHTML = "请长按二维码自动识别"
     }
 
     var img = document.getElementById("priceqr");
