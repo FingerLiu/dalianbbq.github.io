@@ -92,10 +92,17 @@ section + section {
 	margin: 60px 0;
 }
 
-.page h2 {
+.page {
+	h2 {
 	color:  #ffbd66;
 	text-align: center;
 }
+	h3{
+		font-size: 1.5em;
+		color:  #ffbd66;
+		text-align: left;
+}}
+
 
 blockquote {
 	padding: 18px 25px;
@@ -178,4 +185,38 @@ blockquote:before {
 		}
 	}
 
+}
+
+.intro {
+	@media only screen and (max-width: 500px) {
+		.respoinsive {
+			width:30%;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		.respoinsive {
+			width:70%;
+		}
+	}
+}
+
+.introback {
+		background: rgba(255,255,255,0.15);
+		border-radius: 3px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		padding: 16px 50px;
+		a {
+			color: #fff;
+			font-size: 1.38em;
+			font-weight: 300;
+			z-index: 1;
+			position: relative;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		&:hover {
+			background: rgba(0,0,0,0.15);
+			color: $brand-color;
+		}		
 }
