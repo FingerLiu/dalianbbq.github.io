@@ -29,8 +29,10 @@ h1 strong, h2 strong {
 }
 
 h1 {
+	color: #ffbd66;
+	font-family: "Arial","STHeiti","SimHei","黑体","宋体",sans-serif;
 	font-weight: 300;
-	font-size: 2.3em;
+	font-size: 3em;
 	margin: 0;
 }
 
@@ -46,6 +48,12 @@ h3 {
 	margin: 20px 0 10px 0;
 }
 
+h4 {
+	color: #fff;
+	//font-weight: 300;
+	font-size: 1.5em;
+	margin: 0 0 10px 0;
+}
 
 p, address {
 	font-size: 1.38em;
