@@ -35,7 +35,7 @@ author_staff_member:
 3.设定慢烤大师温控至目标温度
 <img style="width:50%;" src="/images/BBQube_final6_1200.jpg" alt="starter" class="screenshot editable"/>
 陶瓷炉的保温性能特别好，也就意味着它的降温会非常的缓慢，所以在点火的时候要注意不要在开始的时候点太多的炭。15寸的小炉子只需要3～4块炭启动就可以了。慢烤大师温控会稳健的把温度升到设定温度。炉子越大，室外温度越低，就需要越多的炭启动。在我们的视频区，您可以找到与您烤炉相对应的点火演示视频。
-<iframe src="//player.bilibili.com/player.html?aid=66658935&cid=115603603&page=1" width="480" height="270" align="center" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=66658935&cid=115603603&page=1" width="640" height="460" align="center" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 <a href="https://space.bilibili.com/471410756/channel/detail?cid=86073">点击观看更多相关视频</a>
 
 <h2>再说说烟熏的木材</h2>

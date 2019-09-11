@@ -7,18 +7,27 @@
   link: /pricing/
   new_window: false
   highlight: false
+
 - name: 烧烤101
   link: /blog/
   new_window: false
   highlight: false
+
 - name: 视频教程
   link: /about/
   new_window: false
   highlight: false
+
 - name: 新手入门
   link: /intro/
   new_window: false
   highlight: false
+
+- name: 技术支持
+  link: /tech/
+  new_window: false
+  highlight: false
+
 - name: 联系我们
   link: /contact/
   new_window: false
