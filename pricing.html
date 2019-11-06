@@ -2,12 +2,12 @@
 title: 酒肉大观美式BBQ - 世界领先的智能温控碳烤炉
 heading: 找到最适合你的烤肉设备
 description: 烧烤大师不再遥不可及.
-pricing_table:
-  - name: 13寸陶瓷炉
+pricing_table_l1:
+  - name: 12寸陶瓷炉
     features:
       - image: /images/jskamado-12.jpg
     call_to_action:
-        price: 1400
+        price: 1600
     id: kmd13
     qr: /images/kmd13-qr-code.png
   - name: 15寸陶瓷炉
@@ -21,17 +21,33 @@ pricing_table:
     features:
     - image: /images/jskamado-22.jpg
     call_to_action:
-        price: 3600
+        price: 3900
     id: kmd22
     qr: /images/kmd22-qr-code.png  
+   
+
+pricing_table_l2:
   - name: 24寸陶瓷炉
     features:
-    - image: /images/jskamado-24.jpg
+      - image: /images/jskamado-24.jpg
     call_to_action:
-        price: 3900
+        price: 4200
     id: kmd24
-    qr: /images/kmd24-qr-code.png    
-    
+    qr: /images/kmd24-qr-code.png
+  - name: 大观炉
+    features:
+      - image: /images/Kamado-Go-01_thumbnail.jpg
+    call_to_action:
+        price: 2590
+    id: kmdgo
+    qr: /images/kgo1-qr-code.png
+  - name: 慢烤大师温控
+    features:
+      - image: /images/BBQube_Thumbnail.jpg
+    call_to_action:
+        price: 900
+    id: bbqubebt
+    qr: /images/bbqube-qr-code.png     
 
 faq:
   - question: 我怎么购买?
@@ -44,7 +60,7 @@ faq:
     answer:  欢迎给我们<a href="/contact/">留言</a>.
 ---
 <div class="plans">
-	{% for plan in page.pricing_table %}
+	{% for plan in page.pricing_table_l1 %}
 		<ul class="plan">
 			<li">
 				<h3>{{ plan.name }}</h3>
@@ -62,6 +78,24 @@ faq:
 	{% endfor %}
 </div>
 
+<div class="plans">
+	{% for plan in page.pricing_table_l2 %}
+		<ul class="plan">
+			<li">
+				<h3>{{ plan.name }}</h3>
+			</li>
+			{% for feature in plan.features %}
+				<li {% if feature.highlight %} class="highlighted"{% endif %}><img src="{{feature.image}}" alt="" /></li>
+			{% endfor %}
+
+      {% if plan.call_to_action %}
+        <li class="pricing-cta"><p>￥{{plan.call_to_action.price}}</p></li>
+        <li class="button alt"><a id="{{plan.id}}" onclick="showprice('{{plan.qr}}')">微信扫码购买</a>
+        </li>
+      {% endif %}
+    </ul>
+	{% endfor %}
+</div>
 <!-- The Modal -->
 <div id="priceview" class="modal">
 
