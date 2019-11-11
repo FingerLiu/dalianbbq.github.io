@@ -81,6 +81,9 @@ pricing_table_l2:
     id: kmdgo
     qr: /images/kgo1-qr-code.png
   - name: 慢烤大师温控
+    description: |+
+      型号	TempMaster Portable
+      适用烤炉 13-26寸陶瓷烤炉 Weber Kettle 18-22 Weber Smokey Mountain 18-22 慢烤大师大观炉	
     features:
       - image: /images/BBQube_Thumbnail.jpg
     call_to_action:
@@ -102,9 +105,9 @@ faq:
 	{% for plan in page.pricing_table_l1 %}
 		<ul class="plan">
 			<li>
-				<h3>{{ plan.name }}</h3>
+				<h2>{{ plan.name }}</h2>
 			</li>
-      <pre>{{ plan.description}}</pre><br>
+      <p><h3>{{ plan.description}}</h3></p><br>
 			{% for feature in plan.features %}
 				<li {% if feature.highlight %} class="highlighted"{% endif %}><img src="{{feature.image}}" alt="" /></li>
 			{% endfor %}
@@ -122,8 +125,9 @@ faq:
 	{% for plan in page.pricing_table_l2 %}
 		<ul class="plan">
 			<li>
-				<h3>{{ plan.name }}</h3>
+				<h2>{{ plan.name }}</h2>
       </li>
+      <p><h3>{{ plan.description}}</h3></p><br>
 			{% for feature in plan.features %}
 				<li {% if feature.highlight %} class="highlighted"{% endif %}><img src="{{feature.image}}" alt="" /></li>
 			{% endfor %}
