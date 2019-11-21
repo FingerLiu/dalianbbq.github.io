@@ -10,40 +10,8 @@
 
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/150x150bb.png">
-		<script type="text/javascript">	
-			(function(w, d, s, a, m) {	
-			a = d.createElement(s);	
-			a.async = 1;	
-			a.src = "//us2.centcount.com/ca.php?sid=1909070000002003&ct=" + (new Date).getTime();	
-			m = d.getElementsByTagName(s)[0];	
-			m.parentNode.insertBefore(a, m)	
-			})(window, document, "script");	
-			</script>	
 
-		<script type='text/javascript'>	
-			var _vds = _vds || [];	
-			window._vds = _vds;	
-			(function(){	
-			  _vds.push(['setAccountId', 'bc46211ccc647d40']);	
-			  (function() {	
-				var vds = document.createElement('script');	
-				vds.type='text/javascript';	
-				vds.async = true;	
-				vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'assets.giocdn.com/vds.js';	
-				var s = document.getElementsByTagName('script')[0];	
-				s.parentNode.insertBefore(vds, s);	
-			  })();	
-			})();	
-	  </script>
 
-{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}	
-	<script>	
-		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;	
-		ga('create', '{{ site.google_analytics_key }}', 'auto');	
-		ga('send', 'pageview');	
-	</script>	
-	<script async src='https://www.google-analytics.com/analytics.js'></script>	
-{% endif %}
 	</head>
 	<body>
 		<header>
@@ -79,5 +47,6 @@
 				return false;
 			};
 		</script>
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278225725'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278225725%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 	</body>
 </html>
